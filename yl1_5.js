@@ -8,7 +8,7 @@ const readline = require('readline').createInterface({
 readline.question('Sisestage ainepunktide arv: ', pointsNr => {
 	readline.question('Sisestage nadalate arv: ', weekNr  => {
 		let vastus = (pointsNr * 26) / weekNr
-		console.log("Ajakulu nadalas on ", Math.round(vastus));
+		console.log("Ajakulu nadalas on ", Math.ceil(vastus));
 		readline.close();
 	})
 });
